@@ -1,7 +1,180 @@
-#menu
-{
+/* Ensure the menu is always visible */
+body{
+	text-align: center;
+}
+#menu {
 	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height: 35px;
-	background: white;
+	height: 50px; /* Adjust height to accommodate menu items */
+	background-color: #81bdf1; /* Light blue background color #81bdf1 */
+	border-bottom: 1px solid #ccc; /* Add a border at the bottom for separation */
+	z-index: 1000; /* Ensure the menu appears above other content */
+	padding-top: 7px; /* Add padding to the top */
+  }
+  
+  #menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  #menu ul li {
+	display: inline-block;
+	margin-right: 20px; /* Adjust spacing between menu items */
+  }
+  
+  #menu ul li a {
+	text-decoration: none;
+	color: #000000; /* Menu item text color */
+	font-weight: bold;
+	font-size: 30px;
+	padding: 15px; /* Add padding around menu items for clickable area */
+  }
+  
+  #menu ul li a:hover {
+	color: rgb(255, 255, 255); /* Change text color on hover */
+  }
+  
+  .section {
+	margin-top: 70px; /* Adjust top margin to make space for fixed menu */
+  }
+  
+  h2 {
+	font-size: 32px;
+  }
+  
+  #about_para {
+	font-size: 20px; /* Adjust the size as needed */
+	line-height: 1.5; /* Adjust the line height */
+	word-spacing: 2px; /* Adjust the spacing between words */
+	letter-spacing: 1px; /* Adjust the spacing between letters */
+	text-align: justify; /* Adjust the text alignment */
+	margin-right: 50px; /* Centers the text horizontally within its containing element */
+	margin-left: 50px; /* Centers the text horizontally within its containing element */
+  }
+  
+  /* Style for the contact section */
+  #contact {
+	padding: 20px;
+	background-color: #81bdf1;
+	border: 1px solid #ddd;
+	border-radius: 7px;
+	max-width: 600px;
+	margin: 20px auto;
+  }
+  
+  #contact h2 {
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  
+  #contact input, #contact textarea {
+	width: calc(100% - 20px); /* Full width minus padding */
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 7px;
+  }
+  
+  #contact button {
+	width: 100%;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	font-size: 16px;
+  }
+  
+  #contact button:hover {
+	background-color: #45a049;
+  }
+  
+  /* Additional styling for better form layout */
+  .form-group {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .form-group-half {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .form-group-half input {
+	width: calc(50% - 10px); /* Half width minus margin */
+  }
+
+  .form-group-half input:first-child {
+	margin-right: 10px; /* Add margin to the right of the first input */
+  }
+
+
+  .gallery{
+	width: 1200px;
+	display: flex;
+	overflow-x: scroll;
+	scrollbar-width: none;
+  }
+
+  .gallery div{
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 30px;
+	padding: 15px;
+	flex: none;
+  }
+
+  .gallery div img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: transform 0.5s;
+  }
+  
+  .gallery::-webkit-scrollbar{
+	display: none;
+  }
+
+  .gallery-wrap{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2% auto;
+  }
+
+  #backBtn, #nextBtn{
+	width: 50px;
+	cursor: pointer;
+	margin: 40px;
+  }
+
+  .gallery div img:hover{
+	filter: grayscale(0);
+	cursor: pointer;
+	transform: scale(1.1);
+  }
+  .gallery-image {
+    width: 600px; /* Set the desired width */
+    height: 338px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+table {
+	width: 87%;
+	border-collapse: collapse;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+	border: 1px solid #dddddd;
+	padding: 8px;
+	text-align: left;
+}
+th {
+	background-color: #f2f2f2;
 }
