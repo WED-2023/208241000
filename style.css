@@ -78,7 +78,8 @@ body{
 	border-radius: 7px;
   }
   
-  #contact button {
+/* Styles for the submit button */
+  #contact button.submit-btn {
 	width: 100%;
 	padding: 10px;
 	background-color: #4CAF50;
@@ -88,9 +89,27 @@ body{
 	cursor: pointer;
 	font-size: 16px;
   }
-  
-  #contact button:hover {
+
+  #contact button.submit-btn:hover {
 	background-color: #45a049;
+  }
+
+  /* Styles for the emoji buttons */
+  #contact .emoji-btn {
+	background-color: #e8f810; /* Set the background color */
+	color: white; /* Set the text color */
+	padding: 9px 16px; /* Adjust padding */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px; /* Set the font size */
+	font-weight: normal; /* Set the font weight */
+	font-family: Arial, sans-serif; /* Set the font family */
+	margin: 7px; /* Add some space between the buttons */
+  }
+
+  #contact .emoji-btn:hover {
+	background-color: #ffd500; /* Change background color on hover */
   }
   
   /* Additional styling for better form layout */
