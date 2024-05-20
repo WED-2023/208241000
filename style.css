@@ -2,7 +2,8 @@
 body{
 	text-align: center;
 }
-#menu {
+/* Updated CSS for the menu */
+  #menu {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -12,8 +13,16 @@ body{
 	border-bottom: 1px solid #ccc; /* Add a border at the bottom for separation */
 	z-index: 1000; /* Ensure the menu appears above other content */
 	padding-top: 7px; /* Add padding to the top */
+	display: flex;
+	align-items: center;
   }
-  
+
+  #menu img {
+	height: 40px; /* Adjust the height as needed */
+	margin-right: 15px; /* Space between the logo and the menu items */
+	margin-left: 15px; /* Space between the logo and the menu items */
+	border-radius: 50%; /* Makes the image round */
+  }
   #menu ul {
 	list-style-type: none;
 	margin: 0;
